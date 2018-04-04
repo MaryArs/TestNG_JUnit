@@ -15,7 +15,6 @@ public class AppFixture {
     @BeforeClass
     public void CreateTempDirectory() throws IOException {
         Path basepath = Paths.get("./");
-        System.out.println(basepath);
         path = Files.createTempDirectory(basepath,"myFile");
         System.out.println("Temporary directory was created in :  " + path);
     }

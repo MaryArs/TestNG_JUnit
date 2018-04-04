@@ -13,59 +13,37 @@ public class AppTest extends AppFixture {
 
         File file = new File(String.valueOf(path), "SimpleFile.txt");
 
-        if (!file.exists()){
-            Assert.assertTrue(file.createNewFile());
-            System.out.println("File is created!");
-
-        } else {
-
-            System.out.println("File already exists!");
-        }
+        Assert.assertFalse(file.exists());
+        Assert.assertTrue(file.createNewFile());
+        System.out.println("File is created!");
+        file.delete();
     }
 
     //***Positive test for Linux Ubuntu. Create file with extension mp3.
     public void CreateAudioFileTest() throws IOException {
-        File file = new File("File.mp3");
-        if (!file.exists()){
-
-            Assert.assertTrue(file.createNewFile());
-            System.out.println("File is created!");
-
-        } else {
-
-            System.out.println("File already exists!");
-
-        }
+        File file = new File(String.valueOf(path),"File.mp3");
+        Assert.assertFalse(file.exists());
+        Assert.assertTrue(file.createNewFile());
+        System.out.println("File is created!");
+        file.delete();
     }
 
      //***Negative test for Linux Ubuntu. Create file with inexistent extension.
     public void CreateFileWithoutExtension() throws IOException {
-        File file = new File("%023Th.??");
-        if (!file.exists()){
-
-            Assert.assertTrue(file.createNewFile());
-            System.out.println("File is created!");
-
-        } else {
-
-            System.out.println("File already exists!");
-
-        }
+        File file = new File(String.valueOf(path),"%023Th.??");
+        Assert.assertFalse(file.exists());
+        Assert.assertTrue(file.createNewFile());
+        System.out.println("File is created!");
+        file.delete();
     }
 
      //***Negative test for Linux Ubuntu. Create file with inappropriate symbol "/".
     @Test(expectedExceptions = {java.io.IOException.class})
     public void CreateInappropriateFileTest() throws IOException {
-        File file = new File("</>*** **");
-        if (!file.exists()){
-
-            Assert.assertFalse(file.createNewFile());
-            System.out.println("File is created!");
-
-        } else {
-
-            System.out.println("File already exists!");
-        }
+        File file = new File(String.valueOf(path),"</>*** **");
+        Assert.assertFalse(file.exists());
+        Assert.assertFalse(file.createNewFile());
+        System.out.println("File is not created!");
     }
 }
 
