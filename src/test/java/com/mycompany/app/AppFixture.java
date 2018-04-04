@@ -14,15 +14,15 @@ public class AppFixture {
 
     @BeforeClass
     public void CreateTempDirectory() throws IOException {
-        Path basepath = Paths.get("/home/mary/dev");
+        Path basepath = Paths.get("./");
         System.out.println(basepath);
-        Path path = Files.createTempDirectory(basepath,"myFile");
+        path = Files.createTempDirectory(basepath,"myFile");
         System.out.println("Temporary directory was created in :  " + path);
     }
 
     @AfterClass
     public void  DeleteTempDirectory() throws IOException {
-      path.toFile().delete();
+      path.toFile().deleteOnExit();
       System.out.println("Temporary directory is deleted!");
     }
 }

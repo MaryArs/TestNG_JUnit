@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
@@ -13,8 +14,7 @@ public class AppTest extends AppFixture {
         File file = new File(String.valueOf(path), "SimpleFile.txt");
 
         if (!file.exists()){
-
-            file.createNewFile();
+            Assert.assertTrue(file.createNewFile());
             System.out.println("File is created!");
 
         } else {
@@ -28,7 +28,7 @@ public class AppTest extends AppFixture {
         File file = new File("File.mp3");
         if (!file.exists()){
 
-            file.createNewFile();
+            Assert.assertTrue(file.createNewFile());
             System.out.println("File is created!");
 
         } else {
@@ -43,7 +43,7 @@ public class AppTest extends AppFixture {
         File file = new File("%023Th.??");
         if (!file.exists()){
 
-            file.createNewFile();
+            Assert.assertTrue(file.createNewFile());
             System.out.println("File is created!");
 
         } else {
@@ -54,17 +54,17 @@ public class AppTest extends AppFixture {
     }
 
      //***Negative test for Linux Ubuntu. Create file with inappropriate symbol "/".
+    @Test(expectedExceptions = {java.io.IOException.class})
     public void CreateInappropriateFileTest() throws IOException {
         File file = new File("</>*** **");
         if (!file.exists()){
 
-            file.createNewFile();
+            Assert.assertFalse(file.createNewFile());
             System.out.println("File is created!");
 
         } else {
 
             System.out.println("File already exists!");
-
         }
     }
 }
