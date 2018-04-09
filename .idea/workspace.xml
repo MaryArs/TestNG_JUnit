@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05775301-d6b6-456b-9874-cc4774d4771f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -165,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/mary/dev/Barancev/TestNG_JUnit/my-app-2/src/test/resources/testng-packages.xml">
+  <component name="RunManager" selected="TestNG.AppTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -295,8 +294,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./home/mary/dev/Barancev/TestNG_JUnit/my-app-2/src/test/resources/testng-packages.xml" />
         <item itemvalue="TestNG.AppTest" />
+        <item itemvalue="TestNG./home/mary/dev/Barancev/TestNG_JUnit/my-app-2/src/test/resources/testng-packages.xml" />
         <item itemvalue="TestNG.AppFixture" />
       </list>
     </recent_temporary>

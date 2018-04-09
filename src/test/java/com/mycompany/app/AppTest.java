@@ -13,7 +13,7 @@ public class AppTest extends AppFixture {
     public void CreateGeneralFileTest() throws IOException {
         File file = new File(String.valueOf(path), "SimpleFile.txt");
         Assert.assertFalse(file.exists());
-        Assert.assertTrue(file.createNewFile());
+        Assert.assertEquals(true,file.createNewFile());
         System.out.println("File is created!");
         file.delete();
     }
@@ -22,7 +22,7 @@ public class AppTest extends AppFixture {
     public void CreateAudioFileTest() throws IOException {
         File file = new File(String.valueOf(path),"File.mp3");
         Assert.assertFalse(file.exists());
-        Assert.assertTrue(file.createNewFile());
+        Assert.assertEquals(true, file.createNewFile());
         System.out.println("File is created!");
         file.delete();
     }
@@ -31,7 +31,7 @@ public class AppTest extends AppFixture {
     public void CreateFileWithoutExtension() throws IOException {
         File file = new File(String.valueOf(path),"%023Th.??");
         Assert.assertFalse(file.exists());
-        Assert.assertTrue(file.createNewFile());
+        Assert.assertEquals(true, file.createNewFile());
         System.out.println("File is created!");
         file.delete();
     }
@@ -41,7 +41,7 @@ public class AppTest extends AppFixture {
     public void CreateInappropriateFileTest() throws IOException {
         File file = new File(String.valueOf(path),"</>*** **");
         Assert.assertFalse(file.exists());
-        Assert.assertFalse(file.createNewFile());
+        Assert.assertEquals(false, file.createNewFile());
         System.out.println("File is not created!");
     }
 }
