@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05775301-d6b6-456b-9874-cc4774d4771f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,10 +18,29 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+            <state relative-caret-position="72">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilesNames.data" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/FilesNames.data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataProviders.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/DataProviders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#483#493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +84,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppFixture.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-packages.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/FilesNames" />
+        <option value="$PROJECT_DIR$/src/test/resources/FilesNames.data" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/DataProviders.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" />
       </list>
     </option>
@@ -302,24 +325,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2018.04.09 at 21h 25m 46s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AppTest - 2018.04.09 at 21h 30m 40s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AppTest - 2018.04.09 at 22h 19m 21s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AppTest - 2018.04.09 at 22h 20m 29s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AppTest - 2018.04.09 at 22h 27m 58s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AppTest - 2018.04.09 at 22h 41m 18s.xml">
-      <configuration name="AppTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AppTest - 2018.04.09 at 22h 42m 46s.xml">
       <configuration name="AppTest" configurationId="TestNG" />
     </history-entry>
@@ -332,9 +337,28 @@
     <history-entry file="AppTest - 2018.04.09 at 22h 45m 27s.xml">
       <configuration name="AppTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 22h 47m 56s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 23h 22m 59s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 23h 24m 54s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 23h 25m 10s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 23h 25m 20s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AppTest - 2018.04.09 at 23h 26m 11s.xml">
+      <configuration name="AppTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1150" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -350,6 +374,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16041666" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32949087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -361,7 +386,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -372,11 +396,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java</url>
-          <line>48</line>
+          <line>92</line>
           <properties />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -384,9 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -411,9 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -445,9 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,9 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,13 +591,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/FilesNames.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+        <state relative-caret-position="18">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/DataProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#483#493#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
