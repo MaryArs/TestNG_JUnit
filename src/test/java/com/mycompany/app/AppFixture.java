@@ -5,23 +5,27 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.testng.annotations.*;
+import org.junit.*;
+import org.junit.rules.ExternalResource;
 
-@Test
 public class AppFixture {
 
-   public Path path;
+    protected static Path path;
 
-    @BeforeClass
-    public void CreateTempDirectory() throws IOException {
-        Path basepath = Paths.get("./");
-        path = Files.createTempDirectory(basepath,"myFile");
-        System.out.println("Temporary directory was created in :  " + path);
-    }
+    @ClassRule
+    public static ExternalResource fileRule = new ExternalResource() {
 
-    @AfterClass
-    public void  DeleteTempDirectory() throws IOException {
-      path.toFile().deleteOnExit();
-      System.out.println("Temporary directory is deleted!");
-    }
+        @Override
+        protected void before() throws IOException {
+            Path basepath = Paths.get("./");
+            path = Files.createTempDirectory(basepath, "myFile");
+            System.out.println("Temporary directory was created in :  " + path);
+        }
+
+        @Override
+        protected void after() {
+            path.toFile().deleteOnExit();
+            System.out.println("Temporary directory is deleted!");
+        }
+    };
 }
