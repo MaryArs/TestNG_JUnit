@@ -6,9 +6,9 @@ import org.junit.runners.Suite;
 
 import static org.junit.experimental.categories.Categories.*;
 
-@SuiteClasses({AppTest.class})
-@RunWith(MyCategories.class)
+@RunWith(Categories.class)
 @IncludeCategory({MyCategories.PositiveTests.class, MyCategories.NegativeTests.class})
+@SuiteClasses({AppFixture.class, AppTest.class})
 
 public class RunSuite {
 }
